@@ -38,35 +38,32 @@ document.body.addEventListener("keyup", function(e) {
 });
 
 document.getElementsByClassName("knight-move-right")[0].addEventListener('click',function(e){
-  knight = document.getElementsByClassName('knight');
+  moveRight("knight");
 });
 
 document.getElementsByClassName("knight-move-left")[0].addEventListener('click',function(e){
-  knight = document.getElementsByClassName('knight');
+  moveLeft("knight");
 });
 
 document.getElementsByClassName("knight-move-up")[0].addEventListener('click',function(e){
-  knight = document.getElementsByClassName('knight');
-
+  moveRight("knight");
 });
 
 document.getElementsByClassName("knight-move-down")[0].addEventListener('click',function(e){
-  knight = document.getElementsByClassName('knight');
-
+  moveDown("knight");
 });
 
 document.getElementsByClassName("dino-move-right")[0].addEventListener('click',function(e){
-  dino = document.getElementsByClassName("dino");
+  moveRight("dino");
 });
 document.getElementsByClassName("dino-move-left")[0].addEventListener('click',function(e){
-  dino = document.getElementsByClassName("dino");
-
+  moveLeft("dino");
 });
 document.getElementsByClassName("dino-move-up")[0].addEventListener('click',function(e){
-  dino = document.getElementsByClassName("dino");
+  moveUp("dino");
 });
 document.getElementsByClassName("dino-move-down")[0].addEventListener('click',function(e){
-  dino = document.getElementsByClassName("dino");
+  moveDown("dino");
 });
 
 function moveUp(player) {
