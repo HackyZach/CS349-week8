@@ -41,7 +41,7 @@ $('.knight-move-up').click(function () {
   moveUp('knight');
 });
 
-$('.knight-move-down').click(function() {
+$('.knight-move-down').click(function () {
   moveDown('knight');
 });
 
@@ -61,11 +61,9 @@ $('.dino-move-down').click(function () {
   moveDown('dino');
 });
 
-function moveUp(player) {
-  
+function moveUp (player) {
   var currentIndex = parseInt($('.' + player)[0].classList[2]);
   if (currentIndex > 8) {
-
     // $('.dino').fadeOut( 150, function() {
     //   // Animation complete.
     //   $('.dino').fadeIn(150, function() {
@@ -78,24 +76,25 @@ function moveUp(player) {
     $('.grid-container').children('.' + (currentIndex - 8)).addClass(player);
   }
 }
-function moveDown(player) {
+function moveDown (player) {
   var currentIndex = parseInt($('.' + player)[0].classList[2]);
-     if (currentIndex < 57) {
-      // $('.dino').fadeOut( 150, function() {
-      //   // Animation complete.
-      //   $('.dino').fadeIn(150, function() {
-      //     $('.' + player).first().removeClass(player);
-      //     $('.grid-container').children('.' + (currentIndex + 8)).addClass(player);
-      //   });
-      // });
-      $('.' + player).first().removeClass(player);
-      $('.grid-container').children('.' + (currentIndex + 8)).addClass(player);
-    }
+  if (currentIndex < 57) {
+    // $('.dino').fadeOut( 150, function() {
+    //   // Animation complete.
+    //   $('.dino').fadeIn(150, function() {
+    //     $('.' + player).first().removeClass(player);
+    //     $('.grid-container').children('.' + (currentIndex + 8)).addClass(player);
+    //   });
+    // });
+
+    $('.' + player).first().removeClass(player);
+    $('.grid-container').children('.' + (currentIndex + 8)).addClass(player);
+  }
 }
-function moveLeft(player) {
+function moveLeft (player) {
   var currentIndex = parseInt($('.' + player)[0].classList[2]);
   currentIndex -= 1;
-  if (currentIndex > 0){
+  if (currentIndex > 0) {
     // $('.dino').fadeOut( 150, function() {
     //   // Animation complete.
     //   $('.dino').fadeIn(150, function() {
@@ -108,11 +107,10 @@ function moveLeft(player) {
     $('.grid-container').children('.' + currentIndex).addClass(player);
   }
 }
-function moveRight(player) {
+function moveRight (player) {
   var currentIndex = parseInt($('.' + player)[0].classList[2]);
   currentIndex += 1;
   if (currentIndex <= 64) {
-
     // $('.dino').fadeOut( 150, function() {
     //   // Animation complete.
     //   $('.dino').fadeIn(150, function() {
@@ -127,10 +125,9 @@ function moveRight(player) {
 }
 
 // Dynamically Create Grid or Table for Playing Field:
-$(function() {
-  console.log( 'Tested index.js!' );
+$(function () {
+  console.log('Tested index.js!');
   let colCount = 1;
-  
   for (let column = 1; column <= 8; column++) {
     for (let row = 1; row <= 8; row++) {
       var tile = $('<div>').addClass('grid-tile row-' + column + ' ' + colCount);
@@ -141,8 +138,6 @@ $(function() {
 
   // Knight:
   $('.1').addClass('knight');
-  
   // Dino:
   $('.2').addClass('dino');
-
 });
