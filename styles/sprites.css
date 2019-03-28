@@ -2,43 +2,67 @@
 	background: url('/imgs/Button.png') no-repeat -578px -2021px;
 	width: 176px;
 	height: 178px;
+	display: inline-block;
+	margin: 0;
+	background-size: initial;
+	transform: scale(0.7)
 }
 .knight-move-left {
 	background: url('/imgs/Button.png') no-repeat -578px -2229px;
 	width: 176px;
 	height: 178px;
+	display: inline-block;
+	transform: scale(0.7)
+
 }
 .knight-move-up {
 	background: url('/imgs/Button.png') no-repeat -578px -2421px;
 	width: 176px;
 	height: 178px;
+	display: inline-block;
+	transform: scale(0.7)
+
 }
 .knight-move-down {
 	background: url('/imgs/Button.png') no-repeat -578px -2616px;
 	width: 176px;
 	height: 178px;
+	display: inline-block;
+	transform: scale(0.7)
+
 }
 .dino-move-right {
 	background: url('/imgs/Button.png') no-repeat -386px -2021px;
 	width: 176px;
 	height: 178px;
+	display: inline-block;
+	transform: scale(0.7)
+
 }
 .dino-move-left {
 	background: url('/imgs/Button.png') no-repeat -386px -2229px;
-	max-width:100%;
-	max-height:100%;
-	background-size: contain;
+	width:176px;
+	height:178px;
+	/* background-size: contain; */
+	display: inline-block;
+	transform: scale(0.7)
+
 }
 .dino-move-up {
 	background: url('/imgs/Button.png') no-repeat -386px -2421px;
 	width: 176px;
 	height: 178px;
+	display: inline-block;
+	transform: scale(0.7)
+
 }
 .dino-move-down {
 	background: url('/imgs/Button.png') no-repeat -386px -2616px;
 	width: 176px;
 	height: 178px;
-	border: solid black 2px;
+	display: inline-block;	
+	transform: scale(0.7)
+
 }
 .knight {
 	background: url('/imgs/Attack_10.png') no-repeat;
@@ -51,4 +75,25 @@
 	height: auto;
 	width: auto;
 	background-size:contain;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
